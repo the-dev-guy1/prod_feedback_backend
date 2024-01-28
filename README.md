@@ -1,11 +1,27 @@
-## Product Feedback Backend 
+# Product Feedback Backend 
 
-# 1- Created Migrations & Models.
-# 2- Installed & Configured Sanctum for authentication and authorization.
-# 3- Run the migrations.
-# 4- Created Controllers for Authentication, Feedbacks & Comments
-#    (AuthController, FeedbackController, CommentController)
-# 5- Implemented validation in AuthController using Laravel's Validation Requests
-#    - Username must be alphanumeric with a minimum of 8 characters and maximum of 16.
-#    - Password must contain at least one uppercase letter, one lowercase letter, one number
-#      and one special character. It should have a length between 8 to 16 characters
+## Requirements
+- PHP >= 7.1.3
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
+- JSON PHP Extension
+- GD PHP Extension
+
+##  Installation
+1. Clone to your server root `gh repo clone the-dev-guy1/prod_feedback_backend`
+2. Run composer install in terminal: `composer install --prefer-dist --no-scripts`. This will download all required dependencies for you.
+3. Create `.env` in application root 
+```cp .env.example .env```
+4. Update database, smtp server, frontend_url details and optional sentry DNS in `.env`
+5. Run `php artisan key:generate` to generate key
+6. Run `php artisan migrate` to install the database
+7. All right sparky! 
+
+
+## Troubleshooting
+
+**APP_KEY not getting added to .env**
+- Add APP_KEY to .env
+- Copy generated key from terminal
