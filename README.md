@@ -17,7 +17,8 @@
 4. Update database, smtp server, frontend_url details and optional sentry DNS in `.env`
 5. Run `php artisan key:generate` to generate key
 6. Run `php artisan migrate` to install the database
-7. All right sparky! 
+7. run `php artisan passport:client --personal`  then follow instructions on screen to create a password grant client
+8. All right sparky! 
 
 
 ## Troubleshooting
