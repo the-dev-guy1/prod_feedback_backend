@@ -1,7 +1,7 @@
 # Product Feedback Backend 
 
 ## Requirements
-- PHP >= 7.1.3
+- PHP >= 8.2
 - OpenSSL PHP Extension
 - PDO PHP Extension
 - Mbstring PHP Extension
