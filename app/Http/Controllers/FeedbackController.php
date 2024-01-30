@@ -21,7 +21,7 @@ class FeedbackController extends Controller
         $validator = Validator::make($request->all(), [
             'title' => 'required|string|max:255',
             'description' => 'required|string',
-            'category' => 'required|string|in:bug,feature,improvement',
+            'category' => 'required|string',
         ]);
 
         if ($validator->fails()) {

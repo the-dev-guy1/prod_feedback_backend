@@ -44,5 +44,7 @@ Route::middleware('auth:api')->group(function () {
 
 
     Route::get('/users', [UserController::class, 'index']);
+    Route::get('/user/{id}', [UserController::class, 'show']);
+
 
 });
